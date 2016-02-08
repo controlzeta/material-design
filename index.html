@@ -10,8 +10,14 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/jquery.progresstracker.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
  <nav class="white" role="navigation">
     <div class="nav-wrapper container">
     <a id="logo-container" href="index.html" class="brand-logo">mezzopane</a>
@@ -42,7 +48,7 @@
 
 
   <div class="container">
-    <div class="section">
+    <div class="section pt-section" data-name="Especialidades" id="ptsection-especialidades">
       <h3 class="center black-text">Nuestra Especialidad</h3>
       <!--   Icon Section   -->
       <div class="row">
@@ -80,7 +86,7 @@
     </div>
   </div>
  <div class="parallax-container gallery parallax-container-gallery valign-wrapper">
-    <div class="section no-pad-bot">
+    <div class="section no-pad-bot pt-section" data-name="Galería" id="ptsection-galeria">
       <div class="container">
 		<div class="row">
            <h3 class="light center white-text">Nuestros Platillos</h3>
@@ -243,6 +249,7 @@
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
+  <script src="js/progresstracker.js"></script>
   <script src="js/init.js"></script>
   </body>
 </html>
