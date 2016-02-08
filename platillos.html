@@ -9,11 +9,13 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/jquery.progresstracker.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/zoomwall.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
  <nav class="white" role="navigation">
-    <div class="nav-wrapper container    <a id="logo-container" style="color: #444; font-size: 2.1rem;" href="index.html" class="brand-logo">mezzopane</a>
+    <div class="nav-wrapper container">
+    <a id="logo-container" style="color: #444; font-size: 2.1rem;" href="index.html" class="brand-logo">mezzopane</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="nosotros.html">Nosotros</a></li>
@@ -30,22 +32,20 @@
       <a href="#" data-activates="nav-mobile" class="button-collapse"><span class="material-icons">menu</span></a>
     </div>
   </nav>
-  <div id="index-banner" class="parallax-container">
+<!--   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container" style="width: 100%; text-align: center; padding-top: 5%;">
 	   <img src="img/mezzopane.png" class="parallax-logo" alt="Unsplashed background img 1">
       </div>
     </div>
     <div class="parallax"><img src="img/background1.jpg" alt="Unsplashed background img 1"></div>
-  </div>
-
-
+  </div> -->
   <div class="container">
-    <div class="section">
-      <h3 class="center black-text">Nuestros Platillos</h3>
+    <div class="section  pt-section" data-name="Aprepista" id="ptsection-aprepista">
+      <h3 class="center black-text">APREPISTA</h3>
       <!--   Icon Section   -->
       <div >
-        <div id="zoomwall" class="zoomwall" style="background:black;">
+        <div id="divaprepista" class="zoomwall" style="background:black;">
             <img src="img/m-bg02.jpg" alt="Amazing Dish" data-highres="img/bm-bg02.jpg" />
             <img src="img/m-bg03.jpg" data-highres="img/m-bg03.jpg" />
             <img src="img/steak.jpg" data-highres="img/steak.jpg" />
@@ -59,10 +59,71 @@
             <img src="img/sm-bg01.jpg" data-highres="img/m-bg01.jpg" />
         </div>
       </div>
-
     </div>
   </div>
- 
+   <div class="container">
+    <div class="section  pt-section" data-name="Mezzopane" id="ptsection-mezzopane">
+      <h3 class="center black-text">MEZZOPANE</h3>
+      <!--   Icon Section   -->
+      <div >
+        <div id="divmezzopane" class="zoomwall" style="background:black;">
+            <img src="img/m-bg02.jpg" alt="Amazing Dish" data-highres="img/bm-bg02.jpg" />
+            <img src="img/m-bg03.jpg" data-highres="img/m-bg03.jpg" />
+            <img src="img/steak.jpg" data-highres="img/steak.jpg" />
+            <img src="img/m-bg05.jpg" data-highres="img/m-bg05.jpg" />
+            <img src="img/m-bg03.jpg" data-highres="img/m-bg03.jpg" />
+            <img src="img/aprepista.jpg" data-highres="img/aprepista.jpg" />
+            <img src="img/sm-bg01.jpg" data-highres="img/m-bg01.jpg" />
+            <img src="img/m-bg03.jpg" data-highres="img/m-bg03.jpg" />
+            <img src="img/desserts.jpg" data-highres="img/desserts.jpg" />
+            <img src="img/m-bg02.jpg" data-highres="img/bm-bg02.jpg" />
+            <img src="img/sm-bg01.jpg" data-highres="img/m-bg01.jpg" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section  pt-section" data-name="Lebevande" id="ptsection-lebevande">
+      <h3 class="center black-text">LEBEVANDE</h3>
+      <!--   Icon Section   -->
+      <div >
+        <div id="divlebevande" class="zoomwall" style="background:black;">
+            <img src="img/m-bg02.jpg" alt="Amazing Dish" data-highres="img/bm-bg02.jpg" />
+            <img src="img/m-bg03.jpg" data-highres="img/m-bg03.jpg" />
+            <img src="img/steak.jpg" data-highres="img/steak.jpg" />
+            <img src="img/m-bg05.jpg" data-highres="img/m-bg05.jpg" />
+            <img src="img/m-bg03.jpg" data-highres="img/m-bg03.jpg" />
+            <img src="img/aprepista.jpg" data-highres="img/aprepista.jpg" />
+            <img src="img/sm-bg01.jpg" data-highres="img/m-bg01.jpg" />
+            <img src="img/m-bg03.jpg" data-highres="img/m-bg03.jpg" />
+            <img src="img/desserts.jpg" data-highres="img/desserts.jpg" />
+            <img src="img/m-bg02.jpg" data-highres="img/bm-bg02.jpg" />
+            <img src="img/sm-bg01.jpg" data-highres="img/m-bg01.jpg" />
+        </div>
+      </div>
+    </div>
+  </div>
+   <div class="container">
+    <div class="section  pt-section" data-name="Dolcezze y Caffe" id="ptsection-dolcezze">
+      <h3 class="center black-text">DOLCEZZE & CAFFE</h3>
+      <!--   Icon Section   -->
+      <div >
+        <div id="divdolcezze" class="zoomwall" style="background:black;">
+            <img src="img/m-bg02.jpg" alt="Amazing Dish" data-highres="img/bm-bg02.jpg" />
+            <img src="img/m-bg03.jpg" data-highres="img/m-bg03.jpg" />
+            <img src="img/steak.jpg" data-highres="img/steak.jpg" />
+            <img src="img/m-bg05.jpg" data-highres="img/m-bg05.jpg" />
+            <img src="img/m-bg03.jpg" data-highres="img/m-bg03.jpg" />
+            <img src="img/aprepista.jpg" data-highres="img/aprepista.jpg" />
+            <img src="img/sm-bg01.jpg" data-highres="img/m-bg01.jpg" />
+            <img src="img/m-bg03.jpg" data-highres="img/m-bg03.jpg" />
+            <img src="img/desserts.jpg" data-highres="img/desserts.jpg" />
+            <img src="img/m-bg02.jpg" data-highres="img/bm-bg02.jpg" />
+            <img src="img/sm-bg01.jpg" data-highres="img/m-bg01.jpg" />
+        </div>
+      </div>
+    </div>
+  </div>
   <footer class="page-footer teal">
     <div class="container">
       <div class="row">
@@ -104,7 +165,11 @@
   <script src="js/zoomwall.js"></script>
   <script type="text/javascript">
   $( document ).ready(function() {
-      zoomwall.create(document.getElementById('zoomwall'));
+      zoomwall.create(document.getElementById('divaprepista'));
+      zoomwall.create(document.getElementById('divmezzopane'));
+      zoomwall.create(document.getElementById('divlebevande'));
+      zoomwall.create(document.getElementById('divdolcezze'));
+      zoomwall.keys();
   });
   </script>
   </body>
