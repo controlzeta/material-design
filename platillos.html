@@ -10,9 +10,15 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/jquery.progresstracker.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link href="css/zoomwall.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
 <nav class="white" role="navigation">
     <div class="nav-wrapper container">
     <a id="logo-container" href="index.html"><img src="img/logoBlack.png" height="65px"></a>
@@ -45,7 +51,7 @@
       <h3 class="center black-text">APREPISTA</h3>
       <!--   Icon Section   -->
       <div >
-        <div id="divaprepista" class="zoomwall" style="background:black;">
+        <div id="divaprepista" class="zoomwall" style="background:transparent;">
             <img src="img/m-bg02.jpg" alt="Amazing Dish" data-highres="img/bm-bg02.jpg" />
             <img src="img/m-bg03.jpg" data-highres="img/m-bg03.jpg" />
             <img src="img/crosta-al-provolone.jpg" data-highres="img/crosta-al-provolone.jpg" />
@@ -60,7 +66,7 @@
       <h3 class="center black-text">MEZZOPANE</h3>
       <!--   Icon Section   -->
       <div >
-        <div id="divmezzopane" class="zoomwall" style="background:black;">
+        <div id="divmezzopane" class="zoomwall" style="background:transparent;">
             <img src="img/mezzopollo.jpg" alt="Amazing Dish" data-highres="img/mezzopollo.jpg" />
             <img src="img/mezzocarne.jpg" data-highres="img/mezzocarne.jpg" />
             <img src="img/belpasticcio.jpg" data-highres="img/belpasticcio.jpg" />
@@ -75,7 +81,7 @@
       <h3 class="center black-text">LEBEVANDE</h3>
       <!--   Icon Section   -->
       <div >
-        <div id="divlebevande" class="zoomwall" style="background:black;">
+        <div id="divlebevande" class="zoomwall" style="background:transparent;">
             <img src="img/red-wine.jpg" alt="Amazing Dish" data-highres="img/red-wine.jpg" />
             <img src="img/white-wine.jpg" data-highres="img/white-wine.jpg" />
             <img src="img/soda.jpg" data-highres="img/soda.jpg" />
