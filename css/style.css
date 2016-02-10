@@ -135,7 +135,7 @@ Preloader
 
 #loader {
   display: block;
-  position: relative;
+  position: absolute;
   left: 50%;
   top: 50%;
   width: 150px;
@@ -143,24 +143,27 @@ Preloader
   margin: -75px 0 0 -75px;
   border-radius: 50%;
   border: 6px solid transparent;
-  border-top-color: #3498db;
+  border-top-color: black;
   -webkit-animation: spin 2s linear infinite;
   /* Chrome, Opera 15+, Safari 5+ */
   animation: spin 2s linear infinite;
   /* Chrome, Firefox 16+, IE 10+, Opera */
+  -moz-animation:spin 2s linear infinite;
   z-index: 1001;
 }
 
 #loader:before {
+  /*background-image: url("../img/2.png");*/
+  /*background-image: url("../img/logo-gira.png");*/
   content: "";
   position: absolute;
   top: 5px;
   left: 5px;
   right: 5px;
   bottom: 5px;
-  border-radius: 50%;
+  border-radius: 55%;
   border: 6px solid transparent;
-  border-top-color: #e74c3c;
+  border-top-color: black;
   -webkit-animation: spin 3s linear infinite;
   /* Chrome, Opera 15+, Safari 5+ */
   animation: spin 3s linear infinite;
@@ -176,7 +179,7 @@ Preloader
   bottom: 15px;
   border-radius: 50%;
   border: 6px solid transparent;
-  border-top-color: #f9c922;
+  border-top-color: black;
   -webkit-animation: spin 1.5s linear infinite;
   /* Chrome, Opera 15+, Safari 5+ */
   animation: spin 1.5s linear infinite;
@@ -219,6 +222,7 @@ Preloader
     /* Firefox 16+, IE 10+, Opera */
   }
 }
+
 #loader-wrapper .loader-section {
   position: fixed;
   top: 0;

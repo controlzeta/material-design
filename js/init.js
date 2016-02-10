@@ -69,11 +69,11 @@ var insURL = "https://www.facebook.com/Mezzopane-1540279952936461/";
       setTimeout(function(){
           jQuery('body').addClass('loaded');
           jQuery('h1').css('color','#222222');
-      }, 3000);
+      }, 10000);
 
       setTimeout(function(){
         jQuery('#loader-wrapper').hide();
-      }, 5000); 
+      }, 15000); 
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
