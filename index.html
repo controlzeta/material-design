@@ -11,9 +11,8 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/jquery.progresstracker.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
  </head>
-<body>
+<body oncontextmenu="return false;">
   <div id="loader-wrapper">
     <div id="loader"></div>
     <div class="loader-section section-left"></div>
@@ -254,6 +253,19 @@ Deleitar el paladar de nuestros clientes con antiguas y peculiares recetas del n
       </div>
     </div>
   </footer>
+  <!---    CREDITS    -------->
+<div id="credits" class="rightclickoverlay"> 
+  <div id="credit-container" style="width: 100%; height: 100%; top:0; position: fixed; background-color:transparent; z-index:2001;">
+  <center> 
+    <font color="#ffffff">
+      <strong> THIS IS A COOL WAY<br> TO MAKE YOUR TEXT<br> SCROLL UPWARDS<br> <br> IT IS EASY AND FAST LOADING </strong>
+      <strong> THIS IS A COOL WAY<br> TO MAKE YOUR TEXT<br> SCROLL UPWARDS<br> <br> IT IS EASY AND FAST LOADING </strong>
+      <strong> THIS IS A COOL WAY<br> TO MAKE YOUR TEXT<br> SCROLL UPWARDS<br> <br> IT IS EASY AND FAST LOADING </strong>
+    </font>
+  </center>
+  </div>
+  <div class="roverlayclose" onclick="$('.rightclickoverlay').hide();"></div>
+</div>
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>

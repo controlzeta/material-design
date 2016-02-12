@@ -286,3 +286,78 @@ Preloader
   -webkit-transition: all 0.3s 1s ease-out;
   transition: all 0.3s 1s ease-out;
 }
+
+.rightclickoverlay {
+    background: rgba(0, 0, 0, 0.95);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2000;
+    display: none;
+}
+
+.roverlayclose {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.roverlayclose {
+    color: #fff;
+    cursor: pointer;
+    font-family: "FontAwesome";
+    font-size: 30px;
+    font-style: normal;
+    line-height: 50px;
+    text-align: center;
+}
+
+.roverlayclose:before {
+  content: "\f00d";
+}
+
+.creditcontainer {
+  color: #FFFFFF;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.creditcontainer .top {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 70px;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.creditcontainer .name {
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 3px;
+  margin: 10px 0;
+}
+
+.creditcontainer .title {
+  font-size: 13px;
+  margin: 0;
+  padding-bottom: 20px;
+  padding-top: 50px;
+  letter-spacing: 4px;
+}
+
+.creditcontainer .break {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-radius: 20px;
+  display: block;
+  height: 5px;
+  width: 5px;
+  margin: 250px auto 150px;
+}
+
+.creditaudio {
+  display: none;
+}

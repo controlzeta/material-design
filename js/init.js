@@ -2,20 +2,10 @@ var fbURL = "https://www.facebook.com/Mezzopane-1540279952936461/";
 var twURL = "https://www.facebook.com/Mezzopane-1540279952936461/";
 var insURL = "https://www.facebook.com/Mezzopane-1540279952936461/";
 
-// $("head").first().append('<script type="application/ld+json">' +
-// 	'{ '+
-// 	  '"@context" : "http://schema.org",' +
-// 	  '"@type" : "LocalBusiness",' +
-// 	  '"name" : "mezzopane",' +
-// 	  '"image" : "http://40.118.247.246/mezzopane/img/mezzopane.png",' +
-// 	  '"telephone" : "23154654654",' +
-// 	  '"address" : {' +
-// 	    '"@type" : "PostalAddress",' +
-// 	    '"streetAddress" : "Filadelfia 128 Col. Nápoles",' +
-// 	    '"addressLocality" : "Ciudad de México"' +
-// 	  '}' +
-// 	'}' +
-// 	'</script>');
+    function fun(){
+      $('#credit-container').css('top', '100%');
+      $('#credit-container').animate({top:"-100%"}, 15000, fun);
+    }
 
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -35,34 +25,38 @@ var insURL = "https://www.facebook.com/Mezzopane-1540279952936461/";
 	$('#twURL').attr('href', twURL);
 	$('#insURL').attr('href', insURL);
 
-	    $('body').progressTracker({
+  $( "#credits" ).click(function() {
+    $(this).hide();
+  });
 
-// Allows for navigating between content sections
-      linking: true,
+    $('body').progressTracker({
 
-// "constant" = always visiable
-// "hover" = shows on mouse hover
-      tooltip: "hover",
+    // Allows for navigating between content sections
+    linking: true,
 
-// The number specified is added to the default value at which the tracker changes to the next section.
-      positiveTolerance: 0,
+    // "constant" = always visiable
+    // "hover" = shows on mouse hover
+    tooltip: "hover",
 
-// The number specified is subtracted from the default value at which the tracker changes to the next section.
-      negativeTolerance: 0,
+    // The number specified is added to the default value at which the tracker changes to the next section.
+    positiveTolerance: 0,
 
-// Only displays the progress tracker when the user is between the top of the first section and the bottom of the last;
-// It is only shown when the tracker sections are in view.
-// Specify false if you want the tracker to always show.
-      displayWhenActive: false,
+    // The number specified is subtracted from the default value at which the tracker changes to the next section.
+    negativeTolerance: 0,
 
-// Specify the value (in pixels) that you wish the progress tracker to be hidden when it is below that.
-      disableBelow: 0,
+    // Only displays the progress tracker when the user is between the top of the first section and the bottom of the last;
+    // It is only shown when the tracker sections are in view.
+    // Specify false if you want the tracker to always show.
+    displayWhenActive: false,
 
-// Specifies what the plugin takes into account when deciding when to switch to the next section.
-// "tracker" or "viewport"
-      tracking: "viewport"
+    // Specify the value (in pixels) that you wish the progress tracker to be hidden when it is below that.
+    disableBelow: 0,
 
-    });
+    // Specifies what the plugin takes into account when deciding when to switch to the next section.
+    // "tracker" or "viewport"
+    tracking: "viewport"
+
+  });
 
       /* Preloader */
 
@@ -74,6 +68,14 @@ var insURL = "https://www.facebook.com/Mezzopane-1540279952936461/";
       setTimeout(function(){
         jQuery('#loader-wrapper').hide();
       }, 4000); 
+
+    $('body').mousedown(function(e) {
+    if (e.which === 3) {
+        fun();
+        $('#credits').css('display','block');
+        e.preventDefault();
+    }
+  });
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
