@@ -14,11 +14,11 @@
   <link href="css/zoomwall.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body oncontextmenu="return false;">
-  <div id="loader-wrapper">
+<!--   <div id="loader-wrapper">
     <div id="loader"></div>
     <div class="loader-section section-left"></div>
     <div class="loader-section section-right"></div>
-  </div>
+  </div> -->
 <nav class="white" role="navigation">
     <div class="nav-wrapper container">
     <a id="logo-container" href="index.html"><img src="img/logoBlack.png" height="65px"></a>
@@ -108,8 +108,8 @@
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="">Company Bio</h5>
-          <p class=" text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+           <h5 class="">Somos Mezzopane</h5>
+          <p class=" text-lighten-4">Mezzopane es una experiencia culinaria, un viaje para agradar tu paladar, somos la estación que te consiente aunque sólo estés de paso.</p>
         </div>
         <div class="col l3 s12" style="color:black; padding-left:15px;">
           <h5 class="">Menú</h5>
@@ -118,16 +118,20 @@
             <li><a class="black-text" href="nosotros.html">Nosotros</a></li>
             <li><a class="black-text" href="platillos.html">Platillos</a></li>
             <li><a class="black-text" href="contacto.html">Contacto</a></li>
-            <li><a class="black-text" href="sucursales.html">Sucursales</a></li>
+            <!-- <li><a class="black-text" href="sucursales.html">Sucursales</a></li> -->
           </ul>
         </div>
-        <div class="col l3 s12" style="color:black;">
+         <div id="social-media" class="col l3 s12" style="color:black;">
           <h5 class="">Conecta</h5>
-          <!-- <ul>
-            <li> --><a target="_blank" class="" id="fbURL" style="padding:10px;" href="' + fbURL + '"><img src="img/facebook-box.png"></a><!-- </li>
-            <li> --><a target="_blank" class="" id="twURL" style="padding:10px;" href="#!"><img src="img/twitter.png"></a><!-- </li>
-            <li> --><a target="_blank" class="" id="insURL" style="padding:10px;" href="#!"><img src="img/instagram.png"></a><!-- </li>
-          </ul> -->
+            <a target="_blank" class="" id="fbURL" style="padding:10px;">
+              <img src="img/facebook-box.png">
+            </a>
+            <a target="_blank" class="" id="twURL" style="padding:10px;">
+              <img src="img/twitter.png">
+            </a>
+            <a target="_blank" class="" id="insURL" style="padding:10px;">
+              <img src="img/instagram.png">
+            </a>
         </div>
       </div>
     </div>
@@ -137,6 +141,29 @@
       </div>
     </div>
   </footer>
+<!---    CREDITS    -------->
+<div id="credits" class="rightclickoverlay"> 
+  <div id="credit-container" style="width: 100%; height: 100%; top:0; position: fixed; background-color:transparent; z-index:2010;">
+  <center> 
+    <font color="#ffffff">
+      <h2 style="color:white;">Créditos</h2>
+      <h3 style="color:white;">Sitio Web</h3>
+      <strong> THIS IS A COOL WAY<br> TO MAKE YOUR TEXT<br> SCROLL UPWARDS<br> <br> IT IS EASY AND FAST LOADING </strong>
+      <h3 style="color:white;">Escenógrafos</h3>
+      <strong> THIS IS A COOL WAY<br> TO MAKE YOUR TEXT<br> SCROLL UPWARDS<br> <br> IT IS EASY AND FAST LOADING </strong>
+      <strong> THIS IS A COOL WAY<br> TO MAKE YOUR TEXT<br> SCROLL UPWARDS<br> <br> IT IS EASY AND FAST LOADING </strong>
+      <h3 style="color:white;">Iluminación</h3>
+      <strong> THIS IS A COOL WAY<br> TO MAKE YOUR TEXT<br> SCROLL UPWARDS<br> <br> IT IS EASY AND FAST LOADING </strong>
+      <strong> THIS IS A COOL WAY<br> TO MAKE YOUR TEXT<br> SCROLL UPWARDS<br> <br> IT IS EASY AND FAST LOADING </strong>
+      <h3 style="color:white;">Cocineros</h3>
+      <strong> THIS IS A COOL WAY<br> TO MAKE YOUR TEXT<br> SCROLL UPWARDS<br> <br> IT IS EASY AND FAST LOADING </strong>
+      <strong> THIS IS A COOL WAY<br> TO MAKE YOUR TEXT<br> SCROLL UPWARDS<br> <br> IT IS EASY AND FAST LOADING </strong>
+      <strong> THIS IS A COOL WAY<br> TO MAKE YOUR TEXT<br> SCROLL UPWARDS<br> <br> IT IS EASY AND FAST LOADING </strong>
+    </font>
+  </center>
+  </div>
+  <div class="roverlayclose" onclick="$('.rightclickoverlay').hide();"></div>
+</div>
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
