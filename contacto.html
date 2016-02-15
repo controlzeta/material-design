@@ -60,37 +60,38 @@
              </div>
              <div class="divider4"></div>
            </div>
-           <form class="col s12 m12 l5 offset-l1">
+           <form id="form1" class="col s12 m12 l5 offset-l1" >
              <div class="row">
                <div class="input-field col s12 m6">
-                 <input id="first_name" type="text" class="validate" length="10">
+                 <input id="first_name" type="text" class="" length="10">
                  <label for="first_name">Nombre</label>
                <span class="character-counter" style="float: right; font-size: 12px; height: 1px;"></span></div>
                <div class="input-field col s12 m6">
-                 <input id="last_name" type="text" class="validate" length="10">
+                 <input id="last_name" type="text" class="" length="10">
                  <label for="last_name">Apellido</label>
                <span class="character-counter" style="float: right; font-size: 12px; height: 1px;"></span></div>
              </div>
              <div class="row">
                <div class="input-field col s12">
-                 <input id="email" type="email" class="validate">
+                 <input id="email" type="email" class="">
                  <label for="email">Correo</label>
                </div>
              </div>
              <div class="row">
                <div class="input-field col s12 m6">
-                 <input id="input_text" type="text" length="10">
-                 <label for="input_text">Asunto</label>
+                 <input id="subject" type="text" length="10">
+                 <label for="subject">Asunto</label>
                <span class="character-counter" style="float: right; font-size: 12px; height: 1px;"></span></div>
              </div>
              <div class="row">
                <div class="input-field col s12">
-                 <textarea id="textarea1" class="materialize-textarea" length="120"></textarea>
-                 <label for="textarea1">Mensaje</label>
+                 <textarea id="comments" class="materialize-textarea" length="120"></textarea>
+                 <label for="comments">Mensaje</label>
                <span class="character-counter" style="float: right; font-size: 12px; height: 1px;"></span></div>
              </div>
              <button class="btn btn-large waves-effect waves-light orange" type="submit" name="#!">Enviar</button>
            </form>
+           <div id="result"></div>
          </div>
        </div>
      </div>
@@ -182,5 +183,46 @@
   <script src="js/materialize.js"></script>
   <script src="js/progresstracker.js"></script>
   <script src="js/init.js"></script>
+  <script>
+  $("#form1").submit(function(event) {
+     var ajaxRequest;
+
+    /* Stop form from submitting normally */
+    event.preventDefault();
+
+    /* Clear result div*/
+    $("#result").html('');
+
+    /* Get from elements values */
+    var values = { //Fetch form data
+            'comments'     : $('#comments').val(),
+            'subject'     : $('#subject').val()
+        };
+
+    /* Send the data using post and put the results in a div */
+    /* I am not aborting previous request because It's an asynchronous request, meaning 
+       Once it's sent it's out there. but in case you want to abort it  you can do it by  
+       abort(). jQuery Ajax methods return an XMLHttpRequest object, so you can just use abort(). */
+       ajaxRequest= $.ajax({
+            url: "sendMail.php",
+            type: "POST",
+            data: values
+        });
+
+      /*  request cab be abort by ajaxRequest.abort() */
+
+     ajaxRequest.done(function (response, textStatus, jqXHR){
+          // show successfully for submit message
+          $("#result").html('Submitted successfully');
+     });
+
+     /* On failure of request this function will be called  */
+     ajaxRequest.fail(function (){
+
+       // show error
+       $("#result").html('There is error while submit');
+     });
+   });
+  </script>
   </body>
 </html>

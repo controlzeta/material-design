@@ -1,10 +1,4 @@
-/* 
-    Document   : style
-    Created on : Feb 22, 2014, 9:30:04 AM
-    Author     : Bilal
-    Description:
-        Purpose of the stylesheet follows.
-*/
+
 @font-face {
   font-family: 'Varela Round';
   font-style: normal;
@@ -16,7 +10,7 @@
 
 p {
 text-align: center;
-font-family: Varela Round;
+font-family: Varela Round, 'Myriad Set Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 font-size: 19px;
 color: #cccccc;
 }
@@ -252,7 +246,7 @@ color: #cccccc;
 
     }
     .wuc-box .title{
-		font-family: Varela Round;
+		font-family: Varela Round,'Myriad Set Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-weight: 100;
         font-size: 53px;
         margin: 30px 0 15PX;
