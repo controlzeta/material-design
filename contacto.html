@@ -89,9 +89,9 @@
                  <label for="comments">Mensaje</label>
                <span class="character-counter" style="float: right; font-size: 12px; height: 1px;"></span></div>
              </div>
+             <div class="row" id="result" style="color: #9e9e9e;"></div>
              <button class="btn btn-large waves-effect waves-light orange" type="submit" name="#!">Enviar</button>
            </form>
-           <div id="result"></div>
          </div>
        </div>
      </div>
@@ -196,7 +196,10 @@
     /* Get from elements values */
     var values = { //Fetch form data
             'comments'     : $('#comments').val(),
-            'subject'     : $('#subject').val()
+            'subject'     : $('#subject').val(),
+            'first_name'     : $('#first_name').val(),
+            'last_name'     : $('#last_name').val(),
+            'email'     : $('#email').val(),
         };
 
     /* Send the data using post and put the results in a div */
@@ -213,14 +216,14 @@
 
      ajaxRequest.done(function (response, textStatus, jqXHR){
           // show successfully for submit message
-          $("#result").html('Submitted successfully');
+          $("#result").html('Gracias por contactarnos');
      });
 
      /* On failure of request this function will be called  */
      ajaxRequest.fail(function (){
 
        // show error
-       $("#result").html('There is error while submit');
+       $("#result").html('Ha ocurrido un error por favor inténtalo más tarde');
      });
    });
   </script>
