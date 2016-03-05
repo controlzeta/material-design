@@ -1,6 +1,8 @@
 var fbURL = "https://www.facebook.com/Mezzopane-1540279952936461/";
 var twURL = "https://twitter.com/mezzopanefood";
 var insURL = "https://www.instagram.com/mezzopane/";
+// Owl Slide
+
 
   //Credits Scroller Function
   function fun(){
@@ -81,7 +83,15 @@ var insURL = "https://www.instagram.com/mezzopane/";
         e.preventDefault();
     }
   });
-
+  $("#owl-demo").owlCarousel({
+ 
+      autoPlay: 3000, //Set AutoPlay to 3 seconds
+      items : 1,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3]
+ 
+  });
+  
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
@@ -146,3 +156,9 @@ $("#form1").submit(function(event) {
        $("#result").html('Ha ocurrido un error por favor inténtalo más tarde');
      });
    });
+   
+   
+   
+   
+   
+   
