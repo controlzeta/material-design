@@ -374,3 +374,21 @@ Preloader
 .creditaudio {
   display: none;
 }
+
+.carta-title {
+    border: solid black;
+    width: 100%;
+    padding: 12px;
+    margin: 12px;
+    font-size: xx-large;
+    text-align:center;
+}
+
+.platillos {
+    padding: 25px;
+}
+
+.platillo {
+    font-size: large;
+    font-weight: bold;  
+}
