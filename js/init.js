@@ -7,7 +7,7 @@ var insURL = "https://www.instagram.com/mezzopane/";
   //Credits Scroller Function
   function fun(){
       $('#credit-container').css('top', '100%');
-      $('#credit-container').animate({top:"-100%"}, 15000, fun);
+      $('#credit-container').animate({top:"-325%"}, 25000, fun);
   }
   
   // Analytics Code
