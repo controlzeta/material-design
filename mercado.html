@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <title>Mazzopane | Fast Food Slow Pleasure</title>
   <meta name="description" content="Mezzopane es una experiencia culinaria, un viaje para agradar tu paladar, somos la estación que te consiente aunque sólo estés de paso.">
+  <meta name="keywords" content="Mezzopane, Comida Italiana, Fast Food, Nápoles, WTC, Filadelfia 124, Delicioso">
   <meta name="author" content="X1 ´México">
   <link rel="icon" sizes="192x192" href="img/favicon.png">
   <!-- CSS  -->
@@ -28,132 +29,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-
-.hidden { display: none; }
-
-#filter {
-  text-align: center;
-  background-color: #333;
-  padding: 15px;
-}
-
-#filter button {
-  border: 0;
-  background-color: #333;
-  font-family: 'Varela Round','Roboto', 'Helvetica', sans-serif;
-  font-size: 14px;
-  color: #FFF;
-  cursor: pointer;
-  padding: 5px 20px;
-}
-
-#filter button.active { background-color: #505050; }
-
-#filter button:focus { outline: 0; }
-
-#posts {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-#posts .post {
-  width: 25%;
-  float: left;
-  height: 250px;
-  overflow: hidden;
-  text-align: center;
-  cursor: pointer;
-  position: relative;
-  z-index: 1;
-  display: inline-block;
-  background: #262626;
-}
-
-#posts .post img {
-  position: relative;
-  display: block;
-  width: -webkit-calc(100% + 60px);
-  width: calc(100% + 60px);
-  opacity: 1;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-30px, 0, 0) scale(1.12);
-  transform: translate3d(-30px, 0, 0) scale(1.12);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  min-height: 100%;
-}
-
-#posts .post:hover img {
-  opacity: 0.5;
-  -webkit-transform: translate3d(0, 0, 0) scale(1);
-  transform: translate3d(0, 0, 0) scale(1);
-}
-
-#posts .post .post-content {
-  padding: 2em;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1.25em;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-#posts .post .post-content::before,
-#posts .post .post-content::after { pointer-events: none; }
-
-#posts .post .post-content,
-#posts .post a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#posts .post a {
-  z-index: 1000;
-  text-indent: 200%;
-  white-space: nowrap;
-  font-size: 0;
-  opacity: 0;
-}
-
-#posts .post h5 {
-  word-spacing: -0.15em;
-  font-weight: 300;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  padding: 1em 1.2em;
-}
-
-#posts .post h5,
-#posts .post  p { margin: 0; }
-
-
-
-#posts .post  p{
-    letter-spacing: 1px;
-    font-size: 68.5%;
-    padding: 0 10px 0 0;
-    border-right: 1px solid #fff;
-    text-align: right;
-    opacity: 0;
- transition: opacity 0.35s, transform 0.35s;
-transform: translate3d(-40px, 0, 0);
-	}
-
-#posts .post:hover p {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
- @media screen and (max-width: 600px) {
-
-#posts .post { width: 50%; }
-}
 </style>
     
 	
@@ -172,7 +47,7 @@ transform: translate3d(-40px, 0, 0);
 
 <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-    <a id="logo-container" href="index.html"><img src="img/logoBlack.png" height="65px"></a>
+    <a id="logo-container" href="index.html"><img src="img/mezzopane-logoBlack.png" height="65px"></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="index.html"><i class="small material-icons left">store</i>Inicio</a></li>
         <li><a href="nosotros.html"><i class="small material-icons left">group</i>Nosotros</a></li>
@@ -344,6 +219,7 @@ $(document).ready(function(){
         <div class="col l6 s12">
            <h5 class="">Somos Mezzopane</h5>
           <p class=" text-lighten-4">Mezzopane es una experiencia culinaria, un viaje para agradar tu paladar, somos la estación que te consiente aunque sólo estés de paso.</p>
+          <p class=" text-lighten-4">Filadelfia 124, Nápoles, 03810 Ciudad de México, México</p>
         </div>
         <div class="col l3 s12" style="color:black; padding-left:15px;">
           <h5 class="">Menú</h5>
@@ -425,9 +301,26 @@ $(document).ready(function(){
   <script src="js/progresstracker.js"></script>
   <script src="js/owl.carousel.js"></script>
   <script src="js/init.js"></script>
-  
- 
-
-
+    <script type="application/ld+json">
+    { "@context" : "http://schema.org",
+      "@type" : "Restaurant",
+      "name" : "Mezzopane",
+      "logo": "http://mezzopane.com/img/logoWhite.png",
+      "description": "Comida rápida italiana una experiencia culinaria, un viaje para agradar tu paladar, somos la estación que te consiente aunque sólo estés de paso.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry ": "México",
+        "addressLocality": "Benito Juarez",
+        "addressRegion": "Nápoles",
+        "streetAddress": "Filadelfia 124",
+        "postalCode" : "03810"
+      },
+    "telephone": "70957198",
+      "url" : "http://mezzopane.com/",
+      "sameAs" : [ "https://www.facebook.com/Mezzopane-1540279952936461",
+        "https://twitter.com/mezzopanefood",
+        "https://www.instagram.com/mezzopane"]
+    }
+  </script>
   </body>
 </html>
